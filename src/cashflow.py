@@ -1,7 +1,7 @@
 from enum import Enum, auto
 
 
-class CashFlowType(Enum):
+class CashflowType(Enum):
     INTEREST = auto()
     PRINCIPAL = auto()
 
@@ -13,6 +13,10 @@ class Cashflow:
         self.to_date = to_date
         self.payment_date = payment_date
         self.amount = amount
+
+
+    def __str__(self):
+        return str(self.payment_date) + ":" + str(round(self.amount, 2))
     
 
 

@@ -8,7 +8,7 @@ class TimeAnalytics:
         self.compute_avg_outstanding(principal_cashflows)
 
         return 0
-        
+
 
     def compute_avg_outstanding(self, principal_cashflows):
 
